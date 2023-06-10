@@ -1,0 +1,5 @@
+﻿{
+    "Email": "email_str",
+    "Error Details": "error_details_str",
+    "Status": "status_str"
+}
