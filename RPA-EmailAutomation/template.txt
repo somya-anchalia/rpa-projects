@@ -1,0 +1,6 @@
+﻿{
+    "Order Amount": order_amt,
+    "Order Date": "order_date",
+    "Order ID": "order_id",
+    "Shopping_Email_ID": "order_email"
+}
