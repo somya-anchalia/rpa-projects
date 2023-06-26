@@ -1,21 +1,21 @@
 {
-  "name": "RPA-EmailAutomation",
-  "description": "Blank Process",
-  "main": "MainWorkflow.xaml",
+  "name": "RPA-ZoomAutomation",
+  "description": "RPA-ZoomAutomation",
+  "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.20.2]",
-    "UiPath.Mail.Activities": "[1.20.0]",
-    "UiPath.System.Activities": "[23.5.0-preview]",
-    "UiPath.Testing.Activities": "[23.5.0-preview]",
-    "UiPath.UIAutomation.Activities": "[23.5.0-preview]",
-    "UiPath.WebAPI.Activities": "[1.16.2]"
+    "UiPath.Excel.Activities": "[2.16.0]",
+    "UiPath.Mail.Activities": "[1.18.1]",
+    "UiPath.System.Activities": "[22.10.3]",
+    "UiPath.Testing.Activities": "[22.10.0]",
+    "UiPath.UIAutomation.Activities": "[22.10.3]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
-  "studioVersion": "23.4.1.0",
-  "projectVersion": "2.0.2",
+  "studioVersion": "22.10.3.0",
+  "projectVersion": "4.0.1",
   "runtimeOptions": {
+    "exceptionHandlerWorkflow": "GlobalHandler.xaml",
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
     "isPausable": true,
@@ -44,25 +44,13 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
-    "modernBehavior": true
+    "modernBehavior": false
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "10267510-53b0-4d25-81f4-6e3f8f439ecb",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "Master Workflow.xaml",
-      "uniqueId": "a26fcfc3-ebe7-43a6-b617-603b8404c546",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "MainWorkflow.xaml",
-      "uniqueId": "96cf57ed-7494-46f3-b952-e4a4b6b49f78",
+      "uniqueId": "cae890e1-5522-4056-800c-ddfb8d6f8d76",
       "input": [],
       "output": []
     }

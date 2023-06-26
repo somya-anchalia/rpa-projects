@@ -1,0 +1,854 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="696,7172" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="96">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="670,7107" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="timeNow" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Zoom Sequence" sap:VirtualizedContainerService.HintSize="608,2458" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Boolean" Name="videoPaused" />
+        <Variable x:TypeArguments="x:Int32" Name="i" />
+        <Variable x:TypeArguments="x:Boolean" Name="elemExists" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button'" sap:VirtualizedContainerService.HintSize="410,107" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1519bd5a-fe27-4c1b-977e-6232421b9d34" InformativeScreenshot="af8891838defe3b592b9c62bfcb692fd" Selector="&lt;wnd app='zoom.exe' cls='ZPPTMainFrmWndClassEx' title='Zoom' /&gt;&lt;ctrl name='メイン ナビゲーション' role='page tab list' /&gt;&lt;ctrl name='ホーム' role='page tab' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button'" sap:VirtualizedContainerService.HintSize="410,107" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1519bd5a-fe27-4c1b-977e-6232421b9d34" InformativeScreenshot="cad96d8f4c468bcd4e2ca2721a8e43cb" Selector="&lt;wnd app='zoom.exe' cls='ZPPTMainFrmWndClassEx' title='Zoom' /&gt;&lt;ctrl name='ビデオをオンにして新しいミーティングを開始する' role='push button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="410,90" sap2010:WorkflowViewState.IdRef="Delay_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Delay>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button'" sap:VirtualizedContainerService.HintSize="410,107" sap2010:WorkflowViewState.IdRef="Click_26" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1519bd5a-fe27-4c1b-977e-6232421b9d34" InformativeScreenshot="90a6f147dede8868ea02d6790236136e" Selector="&lt;wnd app='zoom.exe' cls='zJoinAudioWndClass' title='オーディオに接続' /&gt;&lt;ctrl name='閉じる' role='push button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button'" sap:VirtualizedContainerService.HintSize="410,107" sap2010:WorkflowViewState.IdRef="Click_48" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1519bd5a-fe27-4c1b-977e-6232421b9d34" InformativeScreenshot="5fec39a104486212dabe15c7f3ccae88" Selector="&lt;wnd app='zoom.exe' cls='ZPContentViewWndClass' title='Zoom*' /&gt;&lt;wnd omit:cls='ATL*FFBF23D*' title='ContentLeftPanel' /&gt;&lt;wnd cls='ZPControlPanelClass' title='ミーティング ツール' /&gt;&lt;ctrl name='セキュリティ' role='menu button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button'" sap:VirtualizedContainerService.HintSize="410,107" sap2010:WorkflowViewState.IdRef="Click_49" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1519bd5a-fe27-4c1b-977e-6232421b9d34" InformativeScreenshot="c4909f963fb3303bedfb0670a83af027" Selector="&lt;wnd app='zoom.exe' cls='WCN_ModelessWnd' idx='*' /&gt;&lt;ctrl name='自分自身のミュートを解除, チェック済み' role='menu item' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Image 'zoom.exe  Zoom ミーティング'" sap:VirtualizedContainerService.HintSize="410,155" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD8AAAAtCAYAAAAZQbNPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ5SURBVGhD7Zg9TsMwGIa5htOmTUorYAQES5HKUoEEqAwwsDLBhPi5AJyAGzDCygIL5QYI1p7G5HOb4rqv08a1CSUZHsmK7e/1Y6dp2gXP83heKeTzSiGfVwp5F5QvNnj4vMeD132+2DuZCapBtagmyjLFibx/uQklbEC1UaYJTuSDx124cBtQbZRpghP5sNuBC7dB8NaBmSa4kf86hgtHVO62BKgPQbVRpglO5NGiEeWzteEcaqMxCDlrFjKTL5+vj82ja2isijrPlEzkyzeDJ/ZKhTO/JKA2XatcT/6mkLNmIRP50s6ykA1fDrhX9wWiTRvQrMM5MijThEzkax9Hw3YsT+3w81gQ9+lAmSZk+sAjZPlpQZkmFPK2QQvWwZZ8AerTgTJNcCKf6iXnfluA+hB//iUnfHf3eku1UaYJTuSrTw5/2ES1UaYJTuT9K4c/aaPaKNMEJ/JEbv/MmBcK+bxSyOeVQj6v/Dn50u0hr902Jl5ToTH1h1XYpyNRngqilw4dwSnj7LQN+3TQHDXTRN5/GK81idQnz9gqD3pt7rPpg2hDkk6FsQavdvHmqNQH2Wk3GW1eorwsSjurKyqPSyUCNsTk5Ke5MxCp5MVtLYtGu4/lD3m1NdqmevIidXdDWnnWavIa2FgZ3cdhruX7uVGflKGS9CxwdNvL8uPjRW1JntrymEn8HAK1xzNU5ubkp+VnPaMZunGo7xfkR0/BlnwMylCxIo8K2z55cT36HMdz+g80/cmqGSpWTh71x9iQ74+Nvv66TV5S8vr18VejY3l84irDl4+BBBqjEsuop60DjUPy8hqS6jo9eTQ2Rnfb/yaJ8v8bj38D7vHwQ0KXoFcAAAAASUVORK5CYII=" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bd0dc208-b088-440f-a850-6803359270c4" Selector="&lt;wnd app='zoom.exe' cls='ZPContentViewWndClass' title='Zoom ミーティング 参加者ID:*' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+      </ui:ClickImage>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'menu button  Security'" sap:VirtualizedContainerService.HintSize="410,107" sap2010:WorkflowViewState.IdRef="Click_21" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="107c84fc-11f0-4e3a-962f-5ba9109a701d" InformativeScreenshot="e825ef7cbcdd9edb2bb81dc7e1a8cbab" Selector="&lt;wnd app='zoom.exe' cls='ZPSelAppWndClass' title='共有するウィンドウまたはアプリケーションの選択' /&gt;&lt;ctrl name='詳細' role='page tab' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'menu button  Security'" sap:VirtualizedContainerService.HintSize="410,107" sap2010:WorkflowViewState.IdRef="Click_22" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="107c84fc-11f0-4e3a-962f-5ba9109a701d" InformativeScreenshot="4193e31e5b78145cd81c7e1dc7af2550" Selector="&lt;wnd app='zoom.exe' cls='ZPSelAppWndClass' title='共有するウィンドウまたはアプリケーションの選択' /&gt;&lt;ctrl name='オプション リスト ボックスを共有しています。矢印キーを使って共有するコンテンツを選択します' role='list' /&gt;&lt;ctrl name='ビデオファイルを共有' role='list item' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'menu button  Security'" sap:VirtualizedContainerService.HintSize="410,107" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="107c84fc-11f0-4e3a-962f-5ba9109a701d" InformativeScreenshot="40f0db535d390f07b7ba44494527bfd7" Selector="&lt;wnd app='zoom.exe' cls='ZPSelAppWndClass' title='共有するウィンドウまたはアプリケーションの選択' /&gt;&lt;ctrl name='ビデオ を共有' role='push button' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DelayBetweenKeys="10" DisplayName="Type Into 'Edit'" EmptyField="True" sap:VirtualizedContainerService.HintSize="410,135" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="C:\Users\scnov\Desktop\video.mp4">
+        <ui:TypeInto.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="87d9c1e7-3725-4203-8e6f-0d440fc67a88" InformativeScreenshot="e9b9d0404ab4f238ea76e2ad278e944f" Selector="&lt;wnd app='zoom.exe' cls='#32770' title='ファイルを開く' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:TypeInto.Target>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:TypeInto>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'menu button  Security'" sap:VirtualizedContainerService.HintSize="410,107" sap2010:WorkflowViewState.IdRef="Click_23" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="107c84fc-11f0-4e3a-962f-5ba9109a701d" InformativeScreenshot="2eefb5f47937d787f1f2b74163060ea5" Selector="&lt;wnd app='zoom.exe' cls='#32770' title='ファイルを開く' /&gt;&lt;wnd ctrlid='1' title='開く(&amp;amp;O)' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:UiElementExists DisplayName="Element Exists 'push button  再生'" Exists="[videoPaused]" sap:VirtualizedContainerService.HintSize="410,107" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+        <ui:UiElementExists.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="117db859-1409-404b-bdb4-e3b498ac2a7d" InformativeScreenshot="9c890b74bd7edb498a9094ad2ce77e25" Selector="&lt;wnd app='zoom.exe' cls='ShareVideoPlayerWndClass' title='video.mp4' /&gt;&lt;wnd aaname='video.mp4' cls='ZPVideoSharePlayerBar' /&gt;&lt;ctrl name='再生' role='push button' /&gt;" TimeoutMS="5000">
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:UiElementExists.Target>
+      </ui:UiElementExists>
+      <If Condition="[videoPaused]" sap:VirtualizedContainerService.HintSize="410,377" sap2010:WorkflowViewState.IdRef="If_1">
+        <If.Then>
+          <Sequence sap:VirtualizedContainerService.HintSize="376,195" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'menu button  Security'" sap:VirtualizedContainerService.HintSize="334,107" sap2010:WorkflowViewState.IdRef="Click_28" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="107c84fc-11f0-4e3a-962f-5ba9109a701d" InformativeScreenshot="758a9a163cf0e795e05a5dd081cf4fe7" Selector="&lt;wnd app='zoom.exe' cls='ShareVideoPlayerWndClass' title='video.mp4' /&gt;&lt;wnd aaname='video.mp4' cls='ZPVideoSharePlayerBar' /&gt;&lt;ctrl name='再生' role='push button' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence sap2010:WorkflowViewState.IdRef="Sequence_4" />
+        </If.Else>
+      </If>
+    </Sequence>
+    <Sequence DisplayName="Browser Sequence" sap:VirtualizedContainerService.HintSize="608,2380" sap2010:WorkflowViewState.IdRef="Sequence_20">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="userStr" />
+        <Variable x:TypeArguments="ss:SecureString" Name="pwdStr" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'editable text  アドレスと検索バー'" EmptyField="True" sap:VirtualizedContainerService.HintSize="546,135" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="https://www.onlinestudyroom.scnova.jp/child/login[k(enter)]">
+        <ui:TypeInto.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cd72f739-4967-4d51-9256-ae3568df30cb" InformativeScreenshot="657cd699c279878bf649d1032e2651bb" Selector="&lt;wnd app='msedge.exe' omit:cls='Chrome_WidgetWin_1' title='*- Microsoft​ Edge' /&gt;&lt;ctrl name='* - Microsoft Edge' role='pane' /&gt;&lt;ctrl omit:name='アプリ バー' role='tool bar' /&gt;&lt;ctrl omit:name='アドレスと検索バー' role='editable text' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:TypeInto.Target>
+      </ui:TypeInto>
+      <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="LoginDetails" CacheStrategy="None" DisplayName="Get Credential" FolderPath="study_on@xiast.jp's workspace" sap:VirtualizedContainerService.HintSize="546,141" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[pwdStr]" Username="[userStr]" />
+      <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Into 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="546,135" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="[userStr]">
+        <ui:TypeInto.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="110545be-db92-48a7-b6b6-74a580a29405" InformativeScreenshot="2861fde99d49baca19b8f11699b4fd52" Selector="&lt;html app='msedge.exe' title='スクノバ｜オンライン自習室' /&gt;&lt;webctrl tag='INPUT' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:TypeInto.Target>
+      </ui:TypeInto>
+      <ui:TypeSecureText AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type Secure Text 'INPUT'" EmptyField="True" sap:VirtualizedContainerService.HintSize="546,107" sap2010:WorkflowViewState.IdRef="TypeSecureText_1" SecureText="[pwdStr]">
+        <ui:TypeSecureText.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f4b8c44a-7d16-4502-97bf-e320019c50e8" InformativeScreenshot="85e16f2ec12cee897c642943b8221ea5" Selector="&lt;html app='msedge.exe' title='スクノバ｜オンライン自習室' /&gt;&lt;webctrl tag='INPUT' type='password' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:TypeSecureText.Target>
+      </ui:TypeSecureText>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="546,107" sap2010:WorkflowViewState.IdRef="Click_43" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="00072398-4261-43c0-ad8c-369a3db01883" InformativeScreenshot="e3c30ee25b5f431c7dc3eba4b3282eaa" Selector="&lt;html app='msedge.exe' title='スクノバ｜オンライン自習室' /&gt;&lt;webctrl tag='BUTTON' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="546,107" sap2010:WorkflowViewState.IdRef="Click_50" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="00072398-4261-43c0-ad8c-369a3db01883" InformativeScreenshot="8e0941651c04f898c79ebbb4121e124d" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='サイトから移動しますか?' /&gt;&lt;ctrl name='サイトから移動しますか?' role='dialog' /&gt;&lt;ctrl name='移動' role='push button' /&gt;" TimeoutMS="3000">
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="546,107" sap2010:WorkflowViewState.IdRef="Click_55" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="00072398-4261-43c0-ad8c-369a3db01883" InformativeScreenshot="8e0941651c04f898c79ebbb4121e124d" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='サイトから移動しますか?' /&gt;&lt;ctrl name='サイトから移動しますか?' role='dialog' /&gt;&lt;ctrl name='移動' role='push button' /&gt;" TimeoutMS="3000">
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="546,107" sap2010:WorkflowViewState.IdRef="Click_56" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="00072398-4261-43c0-ad8c-369a3db01883" InformativeScreenshot="6a043fe820d2c3500f11ffca4208ec94" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='サイトを再度読み込みますか?' /&gt;&lt;ctrl name='サイトを再度読み込みますか?' role='dialog' /&gt;&lt;ctrl name='再度読み込む' role='push button' /&gt;" TimeoutMS="3000">
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: スクノバ｜オンライン自習室" sap:VirtualizedContainerService.HintSize="546,1003" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="4c063710-9f35-4bac-9d04-405e3839fc81" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence sap:VirtualizedContainerService.HintSize="512,786" sap2010:WorkflowViewState.IdRef="Sequence_24">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="450,212" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="4c063710-9f35-4bac-9d04-405e3839fc81" Version="V3">
+                <uix:NMouseScroll.SearchedElement>
+                  <uix:SearchedElement>
+                    <uix:SearchedElement.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.onlinestudyroom.scnova.jp/child/home" DesignTimeRectangle="594, 523, 224, 84" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'入室する'" FullSelectorArgument="&lt;webctrl aaname='入室する' parentid='section-zoom' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='入室する' parentid='section-zoom' tag='DIV' type='' class='text-white font-5648 font-bold font-center font-noto-sans-jp undefined' check:innerText='入室する' /&gt;" Guid="d0cce0ac-6693-4bb3-97ec-279da99ffff2" ImageBase64="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" InformativeScreenshot="f46eb7b34e783b5e65d24e2814c5d7e6.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='スクノバ｜オンライン自習室' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="426, 505, 560, 120" ElementType="Button" FriendlyName="'入室する'" FullSelectorArgument="&lt;webctrl parentid='section-zoom' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='section-zoom' tag='BUTTON' type='' class='cursor-pointer ChildDashboard_height-zoom-btn__U0i9T ChildDashboard_width-zoom-btn__FHu2Y undefined undefined rounded-full undefined  ChildDashboard_btn-background__lI+j2 null' aaname='入室する' check:innerText='入室する' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:SearchedElement.Target>
+                    <uix:SearchedElement.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:SearchedElement.Timeout>
+                  </uix:SearchedElement>
+                </uix:NMouseScroll.SearchedElement>
+              </uix:NMouseScroll>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="450,107" sap2010:WorkflowViewState.IdRef="Click_51" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="00072398-4261-43c0-ad8c-369a3db01883" InformativeScreenshot="8e0941651c04f898c79ebbb4121e124d" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='サイトから移動しますか?' /&gt;&lt;ctrl name='サイトから移動しますか?' role='dialog' /&gt;&lt;ctrl name='移動' role='push button' /&gt;" TimeoutMS="3000">
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+              </ui:Click>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ClickType="Single" DisplayName="Click '入室する'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4c063710-9f35-4bac-9d04-405e3839fc81" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.onlinestudyroom.scnova.jp/child/home" DesignTimeRectangle="594, 523, 224, 84" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'入室する'" FullSelectorArgument="&lt;webctrl aaname='入室する' parentid='section-zoom' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='入室する' parentid='section-zoom' tag='DIV' type='' class='text-white font-5648 font-bold font-center font-noto-sans-jp undefined' check:innerText='入室する' /&gt;" Guid="0783e549-cbcb-4e5d-aab0-81f85ee97d5e" ImageBase64="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" InformativeScreenshot="7cccc295875e19ba91e4e913be16ff01.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='スクノバ｜オンライン自習室' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="426, 505, 560, 120" ElementType="Button" FriendlyName="'入室する'" FullSelectorArgument="&lt;webctrl parentid='section-zoom' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='section-zoom' tag='BUTTON' type='' class='cursor-pointer ChildDashboard_height-zoom-btn__U0i9T ChildDashboard_width-zoom-btn__FHu2Y undefined undefined rounded-full undefined  ChildDashboard_btn-background__lI+j2 null' aaname='入室する' check:innerText='入室する' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+              </Sequence>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="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" InformativeScreenshot="30c3a3d1f793474af8756d81905dead6.jpg" Selector="&lt;html app='msedge.exe' title='スクノバ｜オンライン自習室' /&gt;" Url="https://www.onlinestudyroom.scnova.jp/child/home" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+    <Sequence DisplayName="Closing Sequence" sap:VirtualizedContainerService.HintSize="608,2078" sap2010:WorkflowViewState.IdRef="Sequence_19">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Boolean" Name="videoPaused" />
+        <Variable x:TypeArguments="x:Int32" Name="i" />
+        <Variable x:TypeArguments="x:Boolean" Name="elemExists" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Delay Duration="18:00:00" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Delay_16" />
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SVG'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_44" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1d1a7e0a-c0e3-4138-83d2-8636da2cd334" InformativeScreenshot="74991e83d856b8c0a64eb01610e5920c" Selector="&lt;html app='msedge.exe' title='スクノバ｜自習室' /&gt;&lt;webctrl aaname='退出' parentid='foot-bar' tag='BUTTON' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SVG'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_46" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1d1a7e0a-c0e3-4138-83d2-8636da2cd334" InformativeScreenshot="5404c64a84fcd5185b6892a6e93c5e6a" Selector="&lt;html app='msedge.exe' title='スクノバ｜自習室' /&gt;&lt;webctrl aria-role='menuitem' tag='BUTTON' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_52" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="00072398-4261-43c0-ad8c-369a3db01883" InformativeScreenshot="9dc168d337ab2214dfd8bd2d48d937a3" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='サイトから移動しますか?' /&gt;&lt;ctrl name='サイトから移動しますか?' role='dialog' /&gt;&lt;ctrl name='移動' role='push button' /&gt;" TimeoutMS="3000">
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_54" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="00072398-4261-43c0-ad8c-369a3db01883" InformativeScreenshot="69ef0d69583bb120a23ec713363473ef" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='サイトから移動しますか?' /&gt;&lt;ctrl name='サイトから移動しますか?' role='dialog' /&gt;&lt;ctrl name='移動' role='push button' /&gt;" TimeoutMS="3000">
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Delay_18" />
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SVG'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_47" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1d1a7e0a-c0e3-4138-83d2-8636da2cd334" InformativeScreenshot="53708c5ce6dc8b2d873449e1684e82e7" Selector="&lt;html app='msedge.exe' title='スクノバ｜オンライン自習室' /&gt;&lt;webctrl class='cursor-pointer' tag='svg' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SVG'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_45" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1d1a7e0a-c0e3-4138-83d2-8636da2cd334" InformativeScreenshot="85df49c8d3bcb5ef9df7c1643f93e0d9" Selector="&lt;html app='msedge.exe' title='スクノバ｜オンライン自習室' /&gt;&lt;webctrl tag='BUTTON' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_53" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="00072398-4261-43c0-ad8c-369a3db01883" InformativeScreenshot="8e0941651c04f898c79ebbb4121e124d" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='サイトから移動しますか?' /&gt;&lt;ctrl name='サイトから移動しますか?' role='dialog' /&gt;&lt;ctrl name='移動' role='push button' /&gt;" TimeoutMS="3000">
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'menu button  Security'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_39" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="107c84fc-11f0-4e3a-962f-5ba9109a701d" InformativeScreenshot="110e6955c04b40e0104d4a7c3f0e1e6f" Selector="&lt;wnd app='zoom.exe' cls='ShareVideoPlayerWndClass' title='video.mp4' /&gt;&lt;ctrl name='閉じる' role='push button' /&gt;" TimeoutMS="3000">
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Delay_17" />
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'menu button  Security'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_40" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="107c84fc-11f0-4e3a-962f-5ba9109a701d" InformativeScreenshot="f3eb2aff451a087fddbedbba4344d854" Selector="&lt;wnd app='zoom.exe' cls='ZPContentViewWndClass' title='Zoom ミーティング' /&gt;&lt;ctrl name='閉じる' role='push button' /&gt;" TimeoutMS="3000">
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'menu button  Security'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_41" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="107c84fc-11f0-4e3a-962f-5ba9109a701d" InformativeScreenshot="b6330ea0fb4611221825ad28a8c6a8b5" Selector="&lt;wnd app='zoom.exe' cls='zLeaveWndClass' title='ミーティングを終了するか退出しますか?' /&gt;&lt;ctrl name='全員に対してミーティングを終了' role='push button' /&gt;" TimeoutMS="3000">
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'menu button  Security'" sap:VirtualizedContainerService.HintSize="388,107" sap2010:WorkflowViewState.IdRef="Click_42" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="107c84fc-11f0-4e3a-962f-5ba9109a701d" InformativeScreenshot="8406cf0022fdf450596f8df38d716b94" Selector="&lt;wnd app='zoom.exe' cls='ZPhoneEligibleWelcomeWndClass' title='Zoom' /&gt;&lt;ctrl name='詳細情報' role='link' /&gt;" TimeoutMS="2000">
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:Click.Target>
+      </ui:Click>
+    </Sequence>
+  </Sequence>
+</Activity>
